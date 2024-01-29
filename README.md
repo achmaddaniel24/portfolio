@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hi 👋 Everyone
 
-## Getting Started
+Welcome to my portfolio repository! This space serves as a showcase of my skills, projects, and professional journey. Feel free to explore the various sections to get an insight into my work.
 
-First, run the development server:
+## Projects
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Project 1: [Project Name 1](link-to-project-1)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Description of the project]
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Project 2: [Project Name 2](link-to-project-2)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[Description of the project]
 
-## Learn More
+...
 
-To learn more about Next.js, take a look at the following resources:
+## Skills
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Skill 1
+- Skill 2
+- Skill 3
+- ...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Education
 
-## Deploy on Vercel
+- Degree, University (Year)
+- ...
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Experience
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### [Company Name](company-website)
+
+[Role, Date]
+
+### [Another Company](another-company-website)
+
+[Role, Date]
+
+...
+
+## Contact
+
+Feel free to reach out to me at [your-email@example.com] or connect on [LinkedIn](link-to-linkedin-profile).
+
+## Feedback
+
+I appreciate your feedback! If you have any suggestions or questions, please open an issue or contact me directly.
+
+Thank you for visiting!
