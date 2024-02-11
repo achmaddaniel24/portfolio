@@ -4,7 +4,7 @@ Welcome to my portfolio repository! This space serves as a showcase of my skills
 
 ## Contact
 
-Feel free to reach out to me at [achmad24daniel@gmail.com] or connect on [LinkedIn](https://www.linkedin.com/in/achmad-daniel-72a241268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app).
+Feel free to reach out to me at achmad24daniel@gmail.com or connect on [LinkedIn](https://www.linkedin.com/in/achmad-daniel-72a241268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app).
 
 ## Feedback
 
