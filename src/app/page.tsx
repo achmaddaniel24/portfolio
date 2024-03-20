@@ -20,9 +20,9 @@ export default function HomePage() {
         />
         <div className="justify-center items-center text-center md:text-start">
           <span className="text-2xl font-poppins font-semibold md:text-3xl">
-            <a className="text-black">Hello, I‘m </a>
+            <h1 className="text-black">{"Hello, I'm "}</h1>
             <ReactTyped
-              strings={[" Achmad Daniel", " Mobile Developer"]}
+              strings={["Achmad Daniel", "Mobile Developer"]}
               typeSpeed={70}
               backSpeed={70}
               className="text-sky-600"
@@ -31,12 +31,14 @@ export default function HomePage() {
           </span>
           <div className="mt-4">
             <h5 className="text-lg font-poppins font-regular">
-              I‘m always excited to create innovative solutions and engaging
-              user experiences.
+              {
+                "I'm always excited to create innovative solutions and engaging\
+              user experiences."
+              }
             </h5>
           </div>
-          <div className="mt-6 flex justify-center items-center">
-            <div className="mr-4">
+          <div className="mt-6 flex justify-center md:justify-start">
+            <div className="md:mr-4">
               <Button
                 text="Hire Me"
                 color="bg-pink-600"

@@ -6,9 +6,10 @@ import Link from "next/link";
 
 export default function NavigationBar() {
   const [selectedItem, setSelectedItem] = useState<
-    "home" | "about" | "skills" | "contact" | any
+    "home" | "about" | "skills" | "contact" | string
   >("home");
   const [active, setActive] = useState<boolean>(false);
+
   return (
     <div className="sticky top-0 z-10 max-w-5xl w-full flex flex-wrap py-4 px-5">
       <nav className="w-full bg-slate-100 fixed top-0 left-0 right-0 z-10">
@@ -17,7 +18,7 @@ export default function NavigationBar() {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="flex flex-wrap">
                 <h1 className="text-sky-700 text-xl md:text-3xl font-poppins font-semibold">
-                  Portfolio
+                  Portfolio.
                 </h1>
               </div>
               <div className="md:hidden">
@@ -42,9 +43,9 @@ export default function NavigationBar() {
                     key={index}
                     className={`${
                       item.path.includes(selectedItem)
-                        ? "md:font-semibold underline underline-offset-8"
-                        : "md:font-medium"
-                    } md:px-4 px-4 py-2 pb-6 text-xl text-black text-center font-poppins font-medium`}>
+                        ? "font-semibold underline underline-offset-8"
+                        : "font-medium"
+                    } md:px-4 px-4 py-2 pb-6 text-xl text-black text-center font-poppins`}>
                     <Link
                       key={index}
                       href={item.path}
