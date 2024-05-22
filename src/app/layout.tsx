@@ -9,8 +9,30 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_API_URL}`),
   title: "Portfolio | Achmad Daniel",
-  description: "",
+  description: "Achmad Daniel Web Portfolio",
+  openGraph: {
+    title: "Portfolio | Achmad Daniel",
+    description: "Achmad Daniel Web Portfolio",
+    url: process.env.NEXT_PUBLIC_API_URL,
+    siteName: process.env.NEXT_PUBLIC_API_URL,
+    locale: "id_ID",
+    type: "website",
+  },
+  authors: {
+    name: "Achmad Daniel Syahputra",
+    url: process.env.NEXT_PUBLIC_API_URL,
+  },
+  keywords: [
+    "portfolio",
+    "achmad daniel",
+    "developer",
+    "mobile dev",
+    "web dev",
+    "mobile developer",
+    "web developer",
+  ],
 };
 
 export default function RootLayout({
@@ -24,9 +46,11 @@ export default function RootLayout({
       className="scroll-smooth"
       style={{ scrollBehavior: "smooth" }}>
       <body className={notoSans.className}>
-        <NextTopLoader color="#0284C7" showSpinner={false} />
-        <main className="flex flex-col min-h-screen bg-slate-100 text-black">
+        <nav>
+          <NextTopLoader color="#0284C7" showSpinner={false} />
           <NavigationBar />
+        </nav>
+        <main className="flex flex-col min-h-screen bg-slate-100 text-black">
           {children}
         </main>
       </body>

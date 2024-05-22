@@ -1,6 +1,7 @@
 export default function Button(props: any) {
   return (
     <div
+      aria-label={props.text}
       className={`rounded-xl mr-2 hover:drop-shadow ${
         props.color ?? "bg-sky-500 md:bg-gray-300 hover:bg-sky-500 duration-300"
       }`}>
@@ -10,7 +11,9 @@ export default function Button(props: any) {
             ? "text-white"
             : "text-white md:text-neutral-700 hover:text-white duration-300"
         }`}>
-        <a href={props.url ?? ""}>{props.text ?? ""}</a>
+        <a href={props.url ?? ""} aria-label={props.text}>
+          {props.text ?? ""}
+        </a>
       </p>
     </div>
   );

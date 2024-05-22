@@ -12,7 +12,7 @@ export default function NavigationBar() {
 
   return (
     <div className="sticky top-0 z-10 max-w-5xl w-full flex flex-wrap py-4 px-5">
-      <nav className="w-full bg-slate-100 fixed top-0 left-0 right-0 z-10">
+      <div className="w-full bg-slate-100 fixed top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-16">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -28,6 +28,7 @@ export default function NavigationBar() {
                   color="#000000"
                   size={24}
                   rounded
+                  label="menu"
                 />
               </div>
             </div>
@@ -45,7 +46,7 @@ export default function NavigationBar() {
                       item.path.includes(selectedItem)
                         ? "font-semibold underline underline-offset-8"
                         : "font-medium"
-                    } md:px-4 px-4 py-2 pb-6 text-xl text-black text-center font-poppins`}>
+                    } md:px-4 px-4 py-2 pb-6 text-xl text-black text-center font-poppins hover:text-sky-700 duration-300`}>
                     <Link
                       key={index}
                       href={item.path}
@@ -61,7 +62,7 @@ export default function NavigationBar() {
             </div>
           </div>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }
