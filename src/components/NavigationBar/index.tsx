@@ -44,7 +44,7 @@ export default function NavigationBar() {
                     key={index}
                     className={`${
                       item.path.includes(selectedItem)
-                        ? "font-semibold underline underline-offset-8"
+                        ? "font-semibold underline underline-offset-8 text-sky-700"
                         : "font-medium"
                     } md:px-4 px-4 py-2 pb-6 text-xl text-black text-center font-poppins hover:text-sky-700 duration-300`}>
                     <Link

@@ -4,6 +4,7 @@ import PageWrapper from "@/components/PageWrapper";
 import Button from "@/components/Button";
 import Image from "next/image";
 import Title from "@/components/Title";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -47,7 +48,7 @@ export default function HomePage() {
             <div className="md:mr-4">
               <Button
                 text="Hire Me"
-                color="bg-pink-600 hover:bg-pink-800 duration-300"
+                color="bg-pink-500 hover:bg-pink-800 duration-300"
                 url="mailto:achmad24daniel@gmail.com, achmad24daniel@gmail.com?subject=Saya tertarik dengan anda."
               />
             </div>
@@ -57,7 +58,37 @@ export default function HomePage() {
       </div>
       <div id="about" className="h-screen bg-sky-700 text-white px-16 pt-2">
         <div className="p-10">
-          <Title text="About me" />
+          <div className="hidden md:flex justify-center items-center pt-16 content-center">
+            <div>
+              <h1 className="text-2xl font-poppins font-semibold md:text-3xl">
+                About me
+              </h1>
+              <p className="font-poppins max-w-xl pt-6">
+                {
+                  "Hi, I'm Achmad Daniel Syahputra, call me 'Daniel', from Indonesia. I'm a mobile developer and also a web developer. Started my coding journey in 2020."
+                }
+              </p>
+              <p className="font-poppins max-w-xl pt-2">
+                I want to be a professional in a company that offers a positive
+                atmosphere to explore technology and its application for the
+                greater benefit of society in the business world.
+              </p>
+            </div>
+            <Link
+              href="https://www.freepik.com/free-vector/colourful-illustration-programmer-working_5483080.htm#fromView=search&page=1&position=2&uuid=7cf50883-2c87-4923-b511-f015ba52e8ea"
+              target="_blank"
+              aria-label="Image by storyset on Freepik">
+              <Image
+                src="/assets/developer.png"
+                alt="Image by storyset on Freepik"
+                className="rounded-full object-cover"
+                data-aos="fade-up"
+                height={400}
+                width={400}
+                loading="lazy"
+              />
+            </Link>
+          </div>
         </div>
       </div>
       <div id="skills" className="h-screen px-16">
