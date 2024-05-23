@@ -18,7 +18,7 @@ export default function NavigationBar() {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="flex flex-wrap">
                 <h1 className="text-sky-700 text-xl md:text-3xl font-poppins font-semibold">
-                  Portfolio.
+                  Web Portfolio.
                 </h1>
               </div>
               <div className="md:hidden">
