@@ -37,12 +37,12 @@ export default function HomePage() {
             />
           </span>
           <div className="mt-4">
-            <h1 className="text-lg font-poppins font-regular text-neutral-600">
+            <p className="font-poppins font-regular text-neutral-600">
               {
                 "I'm always excited to create innovative solutions and engaging\
               user experiences."
               }
-            </h1>
+            </p>
           </div>
           <div className="mt-6 flex justify-center md:justify-start">
             <div className="md:mr-4">
