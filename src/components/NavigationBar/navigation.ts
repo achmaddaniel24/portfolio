@@ -1,19 +1,19 @@
 const NavigationItem = [
   {
     name: "Home",
-    path: "#home",
+    path: "/#home",
   },
   {
     name: "About",
-    path: "#about",
+    path: "/#about",
   },
   {
     name: "Skills",
-    path: "#skills",
+    path: "/#skills",
   },
   {
     name: "Contact",
-    path: "#contact",
+    path: "/#contact",
   },
 ];
 
