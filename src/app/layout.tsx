@@ -9,20 +9,22 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(`${process.env.NEXT_PUBLIC_API_URL}`),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000"
+  ),
   title: "Portfolio | Achmad Daniel",
   description: "Achmad Daniel Web Portfolio",
   openGraph: {
     title: "Portfolio | Achmad Daniel",
     description: "Achmad Daniel Web Portfolio",
-    url: process.env.NEXT_PUBLIC_API_URL,
-    siteName: process.env.NEXT_PUBLIC_API_URL,
+    url: process.env.NEXT_PUBLIC_DOMAIN,
+    siteName: process.env.NEXT_PUBLIC_DOMAIN,
     locale: "id_ID",
     type: "website",
   },
   authors: {
     name: "Achmad Daniel Syahputra",
-    url: process.env.NEXT_PUBLIC_API_URL,
+    url: process.env.NEXT_PUBLIC_DOMAIN,
   },
   keywords: [
     "portfolio",
