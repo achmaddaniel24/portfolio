@@ -29,9 +29,9 @@ export default function NotFound() {
       </Link>
       <h1 className="text-2xl font-semibold">404 - Page not found :(</h1>
       <p>The page you are looking for does not exist</p>
-      <Link className="mt-4 flex justify-center items-center" href="/#home">
-        <Button text="GO HOME" />
-      </Link>
+      <div className="mt-4 flex justify-center items-center">
+        <Button text="GO HOME" url={process.env.NEXT_PUBLIC_DOMAIN} />
+      </div>
     </div>
   );
 }
