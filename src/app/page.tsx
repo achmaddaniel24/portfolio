@@ -2,8 +2,8 @@
 import { ReactTyped } from "react-typed";
 import PageWrapper from "@/components/PageWrapper";
 import Button from "@/components/Button";
-import Image from "next/image";
 import Title from "@/components/Title";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
