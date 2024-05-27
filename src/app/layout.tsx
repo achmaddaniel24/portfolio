@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000"
   ),
   title: "Portfolio | Achmad Daniel",
+  icons: { icon: "/favicon.ico" },
   description: "Achmad Daniel Web Portfolio",
   openGraph: {
     title: "Portfolio | Achmad Daniel",
