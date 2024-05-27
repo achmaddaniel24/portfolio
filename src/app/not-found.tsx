@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000"
+  ),
   title: "Not Found | Achmad Daniel",
   description: "Halaman Tidak Ditemukan",
 };
