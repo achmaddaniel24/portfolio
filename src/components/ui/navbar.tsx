@@ -1,13 +1,14 @@
 "use client";
+import Link from "next/link";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { Cross as Hamburger } from "hamburger-react";
-import NavigationItem from "./navigation";
-import Link from "next/link";
+import { sections } from "@/utils/section-name";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function NavigationBar() {
-  const [selectedItem, setSelectedItem] = useState<
-    "home" | "about" | "skills" | "contact" | string
-  >("home");
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   const [active, setActive] = useState<boolean>(false);
 
   return (
@@ -17,7 +18,7 @@ export default function NavigationBar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <div className="flex flex-wrap">
-                <h1 className="text-sky-700 text-xl md:text-3xl font-poppins font-semibold">
+                <h1 className="text-sky-700 text-xl md:text-3xl font-poppins font-semibold select-none">
                   Web Portfolio.
                 </h1>
               </div>
@@ -39,24 +40,24 @@ export default function NavigationBar() {
                 active ? "p-12 md:p-0 block" : "hidden"
               }`}>
               <ul className="h-screen md:h-auto items-center justify-center md:flex bg-slate-100">
-                {NavigationItem.map((item, index) => (
-                  <li
-                    key={index}
+                {sections.map((section) => (
+                  <motion.li
+                    key={section.hash}
                     className={`${
-                      item.path.includes(selectedItem)
+                      activeSection == section.name
                         ? "font-semibold underline underline-offset-8 text-sky-700"
                         : "font-medium"
                     } md:px-4 px-4 py-2 pb-6 text-xl text-black text-center font-poppins hover:text-sky-700 duration-300`}>
                     <Link
-                      key={index}
-                      href={item.path}
+                      href={`/${section.hash}`}
                       onClick={() => {
                         setActive(!active);
-                        setSelectedItem(item.path);
+                        setActiveSection(section.name);
+                        setTimeOfLastClick(Date.now());
                       }}>
-                      {item.name}
+                      {section.name}
                     </Link>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>

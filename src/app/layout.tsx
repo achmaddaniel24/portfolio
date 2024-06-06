@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
 import { Noto_Sans } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
-import NavigationBar from "@/components/NavigationBar";
+import NavigationBar from "@/components/ui/navbar";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 import "@/styles/globals.css";
 
 const notoSans = Noto_Sans({
@@ -49,13 +51,14 @@ export default function RootLayout({
       className="scroll-smooth"
       style={{ scrollBehavior: "smooth" }}>
       <body className={notoSans.className}>
-        <nav>
-          <NextTopLoader color="#0284C7" showSpinner={false} />
-          <NavigationBar />
-        </nav>
-        <main className="flex flex-col min-h-screen bg-slate-100 text-black">
+        <ActiveSectionContextProvider>
+          <nav>
+            <NextTopLoader color="#0284C7" showSpinner={false} />
+            <NavigationBar />
+          </nav>
           {children}
-        </main>
+          <Toaster position="bottom-right" />
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
