@@ -4,13 +4,12 @@ import Link from "next/link";
 
 export default function Button(props: any) {
   return (
-    <motion.div
+    <motion.button
       whileHover={{
         scale: 1.1,
       }}
       whileTap={{
-        scale: 0.8,
-        borderRadius: "100%",
+        scale: 0.9,
       }}>
       <Link href={props.url ?? ""} aria-label={props.text}>
         <div
@@ -29,6 +28,6 @@ export default function Button(props: any) {
           </p>
         </div>
       </Link>
-    </motion.div>
+    </motion.button>
   );
 }
