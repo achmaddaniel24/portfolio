@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SeoMetadata } from "@/utils/seo-metadata";
 import { Toaster } from "react-hot-toast";
 import { Noto_Sans } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
@@ -10,35 +11,7 @@ const notoSans = Noto_Sans({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000"
-  ),
-  title: "Portfolio | Achmad Daniel",
-  icons: { icon: "/favicon.ico" },
-  description: "Achmad Daniel Web Portfolio",
-  openGraph: {
-    title: "Portfolio | Achmad Daniel",
-    description: "Achmad Daniel Web Portfolio",
-    url: process.env.NEXT_PUBLIC_DOMAIN,
-    siteName: process.env.NEXT_PUBLIC_DOMAIN,
-    locale: "id_ID",
-    type: "website",
-  },
-  authors: {
-    name: "Achmad Daniel Syahputra",
-    url: process.env.NEXT_PUBLIC_DOMAIN,
-  },
-  keywords: [
-    "portfolio",
-    "achmad daniel",
-    "developer",
-    "mobile dev",
-    "web dev",
-    "mobile developer",
-    "web developer",
-  ],
-};
+export const metadata: Metadata = SeoMetadata;
 
 export default function RootLayout({
   children,

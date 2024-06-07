@@ -1,0 +1,62 @@
+import type { Metadata } from "next";
+
+export const SeoMetadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000"
+  ),
+  title: "Portfolio | Achmad Daniel",
+  icons: { icon: "/web-icon.png" },
+  description:
+    "Explore the portfolio of Achmad Daniel, a skilled Fullstack Developer with expertise in building dynamic and responsive web applications. Discover projects, skills, and insights into modern web development.",
+  openGraph: {
+    title: "Portfolio | Achmad Daniel",
+    images: "/web-icon.png",
+    emails: "achmad24daniel@gmail.com",
+    description:
+      "Explore the portfolio of Achmad Daniel, a skilled Fullstack Developer with expertise in building dynamic and responsive web applications. Discover projects, skills, and insights into modern web development.",
+    url: process.env.NEXT_PUBLIC_DOMAIN,
+    siteName: process.env.NEXT_PUBLIC_DOMAIN,
+    locale: "id_ID",
+    type: "website",
+  },
+  authors: {
+    name: "Achmad Daniel Syahputra",
+    url: process.env.NEXT_PUBLIC_DOMAIN,
+  },
+  keywords: [
+    "portfolio",
+    "web portfolio",
+    "achmad daniel",
+    "achmad daniel syahputra",
+    "developer",
+    "mobile dev",
+    "web dev",
+    "mobile developer",
+    "web developer",
+    "web portfolio github",
+    "Fullstack Developer",
+    "Web Developer",
+    "Achmad Daniel",
+    "Achmad Daniel Syahputra",
+    "Fullstack Development Portfolio",
+    "Web Application Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Mobile Developer",
+    "Java",
+    "C++",
+    "Flutter",
+    "Kotlin",
+    "Dart",
+    "NextJS",
+    "React",
+    "Node.js",
+    "Web Development Projects",
+    "Software Engineer",
+    "Developer Portfolio",
+    "Responsive Design",
+    "Modern Web Development",
+    "Coding",
+    "Programming",
+  ],
+};
