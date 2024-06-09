@@ -28,7 +28,7 @@ export default function Contact() {
           <Title text="Contact" />
         </motion.div>
         <motion.p
-          className="max-w-xl mt-2 text-center"
+          className="max-w-xl mt-2 text-center text-base"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -69,8 +69,7 @@ export default function Contact() {
             toast.success("Email sent successfully!");
           }}>
           <input
-            className="h-14 px-4 rounded-lg border-2 focus:border-sky-300 transition-all dark:outline-none"
-            style={{ width: "400px" }}
+            className="h-14 w-72 md:w-96 px-4 rounded-lg border-2 focus:border-sky-300 transition-all dark:outline-none"
             name="senderEmail"
             type="email"
             required
@@ -78,8 +77,7 @@ export default function Contact() {
             placeholder="Your email"
           />
           <textarea
-            className="h-40 my-3 rounded-lg border-2 focus:border-sky-300 p-4 transition-all dark:outline-none"
-            style={{ width: "400px" }}
+            className="h-40 w-72 md:w-96 my-3 rounded-lg border-2 focus:border-sky-300 p-4 transition-all dark:outline-none"
             name="message"
             placeholder="Your message"
             required
