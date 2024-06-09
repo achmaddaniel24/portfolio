@@ -87,7 +87,12 @@ export default function About() {
               viewport={{
                 once: true,
               }}>
-              <Button text="Next" color="border-2 border-white" url="#skills" />
+              <Button
+                label="Next to skills page"
+                color="border-2 border-white"
+                url="#skills">
+                NEXT
+              </Button>
             </motion.div>
           </div>
           <div className="hidden md:flex justify-center items-center pt-16 content-center">

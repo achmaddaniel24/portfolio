@@ -72,7 +72,7 @@ export default function Home() {
           </div>
           <div className="mt-6 flex justify-center md:justify-start">
             <motion.div
-              className="md:mr-4"
+              className="mr-1.5 md:mr-4"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -81,10 +81,11 @@ export default function Home() {
                 delay: 0.3,
               }}>
               <Button
-                text="Hire Me"
-                color="bg-pink-500 hover:bg-pink-800 duration-300"
-                url="mailto:achmad24daniel@gmail.com, achmad24daniel@gmail.com?subject=I am interested in working with you."
-              />
+                label="Hire Me"
+                color="bg-pink-500 hover:bg-pink-600 duration-300"
+                url="mailto:achmad24daniel@gmail.com, achmad24daniel@gmail.com?subject=I am interested in working with you.">
+                Hire Me
+              </Button>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0 }}
@@ -94,7 +95,9 @@ export default function Home() {
                 duration: 0.3,
                 delay: 0.3,
               }}>
-              <Button text="Download CV" url={process.env.CV_URL_DOWNLOAD} />
+              <Button label="Download CV" url={process.env.CV_URL_DOWNLOAD}>
+                Download CV
+              </Button>
             </motion.div>
           </div>
         </div>

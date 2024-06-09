@@ -4,16 +4,16 @@ export const SeoMetadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000"
   ),
-  title: "Portfolio | Achmad Daniel",
-  icons: { icon: "/web-icon.png" },
+  title: "Achmad Daniel | Personal Website",
+  icons: { icon: "/favicon.ico" },
   description:
-    "Explore the portfolio of Achmad Daniel, a skilled Fullstack Developer with expertise in building dynamic and responsive web applications. Discover projects, skills, and insights into modern web development.",
+    "Explore the portfolio of Achmad Daniel, Web Developer and Mobile Developer with expertise in building dynamic and responsive applications. Discover projects, skills, and insights into modern web development.",
   openGraph: {
-    title: "Portfolio | Achmad Daniel",
-    images: "/web-icon.png",
+    title: "Achmad Daniel | Personal Website",
+    images: "/icon-512.png",
     emails: "achmad24daniel@gmail.com",
     description:
-      "Explore the portfolio of Achmad Daniel, a skilled Fullstack Developer with expertise in building dynamic and responsive web applications. Discover projects, skills, and insights into modern web development.",
+      "Explore the portfolio of Achmad Daniel, Web Developer and Mobile Developer with expertise in building dynamic and responsive applications. Discover projects, skills, and insights into modern web development.",
     url: process.env.NEXT_PUBLIC_DOMAIN,
     siteName: process.env.NEXT_PUBLIC_DOMAIN,
     locale: "id_ID",

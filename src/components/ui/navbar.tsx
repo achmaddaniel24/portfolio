@@ -12,7 +12,7 @@ export default function NavigationBar() {
   const [active, setActive] = useState<boolean>(false);
 
   return (
-    <div className="sticky top-0 z-10 max-w-5xl w-full flex flex-wrap py-4 px-5">
+    <nav className="sticky top-0 z-10 max-w-5xl w-full flex flex-wrap py-4 px-5">
       <div className="w-full bg-slate-100 fixed top-0 left-0 right-0 z-10">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-16">
           <div>
@@ -42,12 +42,15 @@ export default function NavigationBar() {
               <ul className="h-screen md:h-auto items-center justify-center md:flex bg-slate-100">
                 {sections.map((section) => (
                   <motion.li
+                    whileTap={{
+                      scale: 0.8,
+                    }}
                     key={section.hash}
                     className={`${
-                      activeSection == section.name
-                        ? "font-semibold underline underline-offset-8 text-sky-700"
+                      activeSection === section.name
+                        ? "font-semibold underline underline-offset-8 md:no-underline text-sky-700 md:bg-slate-200"
                         : "font-medium"
-                    } md:px-4 px-4 py-2 pb-6 text-xl text-black text-center font-poppins hover:text-sky-700 duration-300`}>
+                    } text-xl text-black text-center px-4 py-2 pb-6 md:pb-2 md:mr-1 font-poppins rounded-lg md:hover:bg-slate-200 hover:text-slate-500 duration-300`}>
                     <Link
                       href={`/${section.hash}`}
                       onClick={() => {
@@ -64,6 +67,6 @@ export default function NavigationBar() {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
